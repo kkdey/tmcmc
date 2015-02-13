@@ -1,0 +1,92 @@
+\documentclass[11pt, DIV10,a4paper]{article}
+\usepackage{color}
+\usepackage{float}
+\usepackage[bf,small]{caption2}
+\usepackage{comment}
+\usepackage{amsmath}
+\usepackage{bigints}
+%\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{amsopn}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+%\usepackage{titling}
+%\usepackage[numbers]{natbib}
+%\usepackage{natbib}
+\usepackage{tocbibind}
+\usepackage[a4paper,colorlinks,breaklinks,unicode]{hyperref}%backref,
+\usepackage{makeidx}
+\usepackage{pst-all}
+\usepackage{epsfig,psfrag}
+\usepackage{graphicx}
+%\usepackage{undertilde}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{tabularx}
+%\usepackage{mathtools}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{subfigure}
+\usepackage{setspace}
+\usepackage[mathscr]{euscript}
+\usepackage[margin=1in]{geometry}
+\usepackage{multirow}
+\singlespacing
+\usepackage{slashbox}
+\hyphenpenalty=1000
+
+
+\newcommand {\ctn}{\cite}
+
+\pagenumbering{arabic}
+
+
+\usepackage{url}
+\hyphenpenalty=1000
+%\documentclass[]{gSCS2e}
+
+
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{result}{Result}[section]
+\newtheorem{algo}{Algorithm}[section]
+
+\normalsize
+%\input{tex/ Definitions}
+\begin{document}
+
+
+Johnson and Geyer [2012] showed that one can obtain geometric ergodicity for much broader class of Markov chains by using variable transformation. In this section, we shall consider distributions which are not super-exponentially  light and shall try to observe how fast the RWMH or the TMCMC chains for the transformed process (using the transformtaion as suggested by Johnson and Geyer) comverges to the stationary distribution.
+
+First we consider Multivariate t distribution all of whose components are indpendent and the marginals along each co-ordinate follows a $t$ distribution centered at $0$ with degrees of freedom $10$. The KS plot comparison of the chains with and without diffeomorphism, and also the RWMH and the TMCMC chains with diffeomorphism are presented below. 
+
+% figure
+
+Next we consider the Multivariate Cauchy distribution all of whose components re independent with the marginals along each co-ordinate following  a Cauchy distribution with location $0$ and scale $1$.  The KS plot comparison of the chains with and without diffeomorphism as well as the comparison of the RWMH and the TMCMC chains with diffeomorphism are presented below
+
+% figure
+
+Next we consider distributions with dependent components. We consider the Multivariate t distribution with mean having all components $0$ and the scale matrix given by 
+
+$$  \Sigma  = 0.7 I + 0.3 \mathbb{1} \mathbb{1}^{T}  $$
+
+and the degrees of freedom equal to $1$. Then the comparison between the processes with and without diffeomorphsim and the comparison between the RWMH and the TMCMC chains for the diffeomorphism process are given below.
+
+
+% figure
+
+We consider the Multivariate Cauchy distribution with mean having all components $0$ and the scale matrix given by 
+
+$$  \Sigma  = 0.7 I + 0.3 \mathbb{1} \mathbb{1}^{T}  $$
+
+Then the comparison between the processes with and without diffeomorphsim and the comparison between the RWMH and the TMCMC chains for the diffeomorphism process are given below.
+
+%figure
+
+\end{document}
+
